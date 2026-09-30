@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Building & Engineering Experts Maroc | Bureau d'Études & Ingénierie</title>
+<meta name="description" content="Building & Engineering Experts Maroc — Bureau d'études techniques et d'ingénierie à Tanger. Génie civil, VRD, BIM, hydraulique, électrification et sécurité incendie.">
+<meta property="og:title" content="Building & Engineering Experts Maroc"><meta property="og:image" content="assets/logo-square.png">
+<link rel="icon" href="assets/logo-square.png">
+<style>
+:root{--bg:#080f1c;--bg2:#0f1a2e;--tx:#eef3fa;--m:#9aa8bb;--ac:#3b9cff;--bd:rgba(255,255,255,.12);--gl:rgba(255,255,255,.06)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,'Segoe UI',Tahoma,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.w{max-width:1180px;margin:auto;padding:0 24px}.sec{padding:100px 24px}
+h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.05;letter-spacing:-.02em}h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:18px}
+.lead{color:var(--m);max-width:640px;font-size:1.08rem;margin-bottom:22px}.eb{color:var(--ac);text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;margin-bottom:14px}
+.nav{position:fixed;inset:0 0 auto;z-index:30;display:flex;align-items:center;gap:18px;padding:10px 26px;background:rgba(8,15,28,.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.brand{background:#fff;border-radius:6px;padding:3px 8px;display:flex;align-items:center;font-weight:800;color:#2b4453;font-size:.8rem;line-height:1}.brand img{height:40px;display:block}
+.nav nav{display:flex;gap:16px;margin-inline-start:auto;font-size:.88rem;color:var(--m)}.nav nav a:hover{color:#fff}
+.lang{display:flex;gap:4px}.lang button{background:none;border:1px solid var(--bd);color:var(--m);padding:4px 9px;cursor:pointer;border-radius:5px;font-weight:600}.lang .on{color:#fff;background:var(--ac);border-color:var(--ac)}
+.btn{display:inline-block;background:var(--ac);color:#fff;border:0;padding:13px 26px;border-radius:8px;font-weight:600;cursor:pointer;transition:.25s;font:inherit;font-weight:600}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(59,156,255,.4)}.btn.g{background:none;border:1px solid var(--bd)}.btn.s{padding:8px 16px;font-size:.85rem}
+.bg{display:none;background:none;border:0;color:#fff;font-size:1.6rem}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 70% 30%,#18305a,var(--bg) 70%)}
+#hc{position:absolute;inset:0;width:100%;height:100%}.ht{position:relative;z-index:2;padding-top:80px;max-width:640px;transition:transform .2s}.ht .lead{margin:22px 0 30px}.cta{display:flex;gap:14px;flex-wrap:wrap}
+.glow{position:fixed;width:400px;height:400px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(59,156,255,.13),transparent 65%);transform:translate(-50%,-50%);z-index:1}
+.gl{background:var(--gl);border:1px solid var(--bd);backdrop-filter:blur(10px);border-radius:14px;padding:24px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:30px}.facts b{display:block;font-size:2rem;color:var(--ac)}.facts span{color:var(--m)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;perspective:1000px}.cards.t3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--bg2),#0a1424);border:1px solid var(--bd);border-radius:14px;padding:26px;transition:transform .15s,border-color .3s,box-shadow .3s;transform-style:preserve-3d}
+.card:hover{border-color:var(--ac);box-shadow:0 24px 50px rgba(0,0,0,.5)}.card::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.12),transparent 50%);opacity:0;transition:.3s}.card:hover::after{opacity:1}
+.card svg{width:38px;height:38px;stroke:var(--ac);fill:none;stroke-width:1.6;margin-bottom:10px;transform:translateZ(30px)}.card h3{margin-bottom:6px;transform:translateZ(20px)}.card p{color:var(--m);font-size:.94rem}.card em{display:block;margin-top:12px;font-size:.8rem;color:var(--ac);font-style:normal}
+.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;perspective:800px}.steps li{border-top:2px solid var(--ac);padding:16px 0;transform:rotateX(40deg) translateY(30px);opacity:0;transition:1s}.steps li.in{transform:none;opacity:1}.steps i{display:block;font-style:normal;color:var(--ac);font-size:1.6rem}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ly{display:flex;flex-wrap:wrap;gap:10px}.ly button,.chips span{background:var(--gl);border:1px solid var(--bd);color:var(--tx);padding:8px 16px;border-radius:99px;cursor:pointer;font:inherit}.ly .on{background:var(--ac);border-color:var(--ac)}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.vw{height:400px;position:relative;padding:0}.vw canvas{width:100%;height:100%;display:block}
+small{color:var(--m);font-size:.75rem}.lb{position:absolute;inset-inline-end:12px;bottom:8px}
+.art{position:relative;perspective:900px}.art svg{width:100%;height:auto;transition:transform .2s}
+.iso{height:320px;display:grid;place-items:center;perspective:900px}.scn{position:relative;width:200px;height:200px;transform-style:preserve-3d;transform:rotateX(-25deg) rotateY(30deg);transition:transform .15s}
+.bx{position:absolute;transform-style:preserve-3d}.bx div{position:absolute;border:1px solid var(--ac);background:rgba(59,156,255,.1)}
+.fl{position:absolute;width:360px;height:360px;left:-80px;top:20px;transform:rotateX(90deg);background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:30px 30px}
+.note{display:block;margin-top:8px}.fm{display:grid;gap:12px}.fm input,.fm textarea{background:rgba(0,0,0,.25);border:1px solid var(--bd);color:#fff;padding:12px;border-radius:8px;font:inherit;width:100%}
+.art,.vw,.iso{transform-style:preserve-3d;box-shadow:0 30px 60px rgba(0,0,0,.35)}.art{display:block}.vw{position:relative}.art::after,.vw::after{content:"";position:absolute;inset:0;border-radius:14px;pointer-events:none;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.16),transparent 55%);opacity:0;transition:.3s}.art:hover::after,.vw:hover::after{opacity:1}.art:hover svg{transform:scale(1.05) translateZ(40px)}a.art{cursor:pointer}
+footer{border-top:1px solid var(--bd);padding:44px 0;color:var(--m);background:#050a14}footer p{margin-bottom:10px}
+.rv{opacity:0;transform:translate3d(0,40px,-60px) rotateX(8deg);transition:1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+[dir=rtl] .steps li{direction:rtl}
+@media(max-width:860px){.sp{grid-template-columns:1fr}.bg{display:block;margin-inline-start:auto}.nav nav{display:none;position:absolute;top:100%;inset-inline:0;flex-direction:column;background:var(--bg2);padding:20px;margin:0}.nav nav.o{display:flex}.nav .btn{display:none}.glow{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv,.steps li{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="glow" id="glow"></div>
+<header class="nav">
+ <a href="#home" class="brand"><img src="assets/logo.jpeg" alt="Building & Engineering Experts" onerror="this.replaceWith('BE² MAROC')"></a>
+ <nav id="menu"><a href="#home" data-t="n1"></a><a href="#about" data-t="n2"></a><a href="#exp" data-t="n3"></a><a href="#bim">BIM</a><a href="#prj" data-t="n5"></a><a href="#cmp" data-t="n6"></a><a href="#ct" data-t="n7"></a></nav>
+ <div class="lang" id="lang"><button data-l="fr">FR</button><button data-l="en">EN</button><button data-l="ar">AR</button></div>
+ <a class="btn s" href="#ct" data-t="c2"></a><button class="bg" id="bg">☰</button>
+</header>
+
+<section id="home" class="hero"><canvas id="hc"></canvas>
+ <div class="w"><div class="ht" id="ht"><p class="eb" data-t="eb"></p><h1 data-t="h1"></h1><p class="lead" data-t="lead"></p>
+ <div class="cta"><a class="btn" href="#exp" data-t="c1"></a><a class="btn g" href="#ct" data-t="c2"></a></div></div></div></section>
+
+<section id="about" class="w sec rv"><h2 data-t="ab"></h2><p class="lead" data-t="abt"></p>
+ <div class="facts"><div class="gl card tilt"><b>2019</b><span data-t="f1"></span></div><div class="gl card tilt"><b>100K MAD</b><span data-t="f2"></span></div><div class="gl card tilt"><b>Engineering</b><span data-t="f3"></span></div><div class="gl card tilt"><b>BIM</b><span>Digital Engineering</span></div></div></section>
+
+<section id="exp" class="w sec"><h2 class="rv" data-t="ex"></h2><div class="cards" id="svc"></div></section>
+
+<section class="w sec rv"><h2 data-t="pr"></h2><ol class="steps" id="steps"></ol></section>
+
+<section id="bim" class="w sec sp"><div class="rv"><h2>BIM & Digital Engineering</h2><p class="lead" data-t="bimt"></p><div class="ly" id="ly"></div></div>
+ <div class="gl vw rv"><canvas id="bc"></canvas><small class="lb" data-t="mod"></small></div></section>
+
+<section class="w sec sp"><div class="rv"><h2 data-t="in"></h2><p class="lead" data-t="int"></p></div>
+ <div class="gl iso rv" id="iso"><div class="scn" id="scn"><div class="fl"></div></div><small class="lb" data-t="ill"></small></div></section>
+
+<section class="w sec sp"><div class="gl art rv"><svg id="fs" viewBox="0 0 300 160"><rect x="20" y="20" width="260" height="120" fill="none" stroke="#3b9cff" stroke-width="2"/><path d="M20 80h100M180 80h100M150 20v40M150 100v40" stroke="#3b9cff" stroke-dasharray="4 4"/><path d="M50 115L130 85H240" stroke="#4ade80" stroke-width="3" fill="none" stroke-dasharray="200" stroke-dashoffset="200"><animate attributeName="stroke-dashoffset" to="0" dur="3s" repeatCount="indefinite"/></path><circle cx="240" cy="85" r="5" fill="#4ade80"/></svg><small class="lb" data-t="ill"></small></div>
+ <div class="rv"><h2 data-t="fi"></h2><p class="lead" data-t="fit"></p></div></section>
+
+<section class="w sec rv"><h2>VRD & Infrastructure</h2><div class="gl art"><svg viewBox="0 0 600 190" id="vs"><path d="M0 100h600" stroke="#5b6778" stroke-width="20"/><path d="M0 100h600" stroke="#fff" stroke-dasharray="14 12" opacity=".5"/><path d="M0 145h600" stroke="#3b9cff" stroke-width="4"/><path d="M0 170h600" stroke="#f5c542" stroke-dasharray="6 6"/><path d="M60 145V100M260 145V100M480 145V100" stroke="#3b9cff" stroke-width="3"/><g fill="#3b9cff"><circle cx="60" cy="145" r="6"/><circle cx="260" cy="145" r="6"/><circle cx="480" cy="145" r="6"/></g><path d="M20 60h80M180 50h120M400 60h140" stroke="#8a97a8" stroke-width="3"/></svg><small class="lb" data-t="ill"></small></div>
+ <div class="chips"><span>VRD</span><span>AEP</span><span data-t="k1"></span><span data-t="k2"></span><span data-t="k3"></span></div></section>
+
+<section id="prj" class="w sec"><h2 class="rv" data-t="pj"></h2><div class="cards t3" id="pcs"></div></section>
+
+<section id="cmp" class="w sec rv"><h2 data-t="cp"></h2><div class="chips" id="sk"></div></section>
+
+<section class="w sec sp rv"><div><h2 data-t="lo"></h2><p class="lead">Tanger, <span data-t="ma"></span><br>Angle Rue Jordanie et Liban, Résidence Yamna 2, Bureau N°25, Tanger 90000</p><small class="note" data-t="ad"></small><br><a class="btn s" id="mapb" target="_blank" rel="noopener" data-t="mp"></a></div>
+ <a class="gl art" id="mapl" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 300 160"><g stroke="#3b9cff" opacity=".3"><path d="M0 40h300M0 80h300M0 120h300M60 0v160M120 0v160M180 0v160M240 0v160"/></g><path d="M20 140Q100 100 150 80T280 30" stroke="#3b9cff" fill="none" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" to="-16" dur="1s" repeatCount="indefinite"/></path><circle cx="150" cy="80" r="6" fill="#3b9cff"/><circle cx="150" cy="80" r="6" fill="none" stroke="#3b9cff"><animate attributeName="r" from="6" to="34" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite"/></circle><text x="162" y="84" fill="#fff" font-size="12">Tanger</text></svg></a></section>
+
+<section id="ct" class="w sec sp"><div class="rv"><h2 data-t="ctt"></h2><p class="lead">Tél. <a href="tel:+212662601521" dir="ltr">+212 662 60 15 21</a><br>Tanger, <span data-t="ma"></span><br><a href="#" id="li">LinkedIn — Building & Engineering Experts Maroc</a></p></div>
+ <form class="gl fm rv" id="fm"><input data-p="p1" required><input data-p="p2"><input data-p="p3" type="email" required><input data-p="p4"><input data-p="p5"><textarea data-p="p6" rows="4"></textarea><button class="btn" data-t="sub"></button><small id="fmsg" data-t="fmn"></small></form></section>
+
+<footer><div class="w"><p><b>BUILDING & ENGINEERING EXPERTS MAROC</b><br><span data-t="ft"></span> · Tanger — <span data-t="ma"></span></p><p><a href="#exp" data-t="n3"></a> · <a href="#bim">BIM</a> · <a href="#prj" data-t="n5"></a> · <a href="#ct" data-t="n7"></a> · <a href="#">LinkedIn</a></p><small>© 2026 Building & Engineering Experts Maroc — <span data-t="demo"></span></small></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ===== i18n: edit any text here; switch language anytime with FR/EN/AR ===== */
+const T={
+fr:{n1:'Accueil',n2:'À propos',n3:'Expertises',n5:'Projets',n6:'Compétences',n7:'Contact',c1:'Découvrir nos expertises',c2:'Nous contacter',eb:"Bureau d'études techniques · Tanger",h1:"L'ingénierie de précision au service de vos projets.",lead:"Building & Engineering Experts Maroc accompagne les projets de construction, d'infrastructure et industriels à travers des études techniques, l'ingénierie et les solutions BIM.",
+ab:'Une expertise technique au service de projets complexes',abt:"Building & Engineering Experts Maroc est un bureau d'études techniques et d'ingénierie créé en 2019. Son activité couvre notamment les études techniques, le génie civil, les infrastructures, le BIM, l'hydraulique, l'électrification et la sécurité incendie.",f1:'Création',f2:'Capital social',f3:"Bureau d'études",
+ex:'Nos expertises',pr:"Processus d'ingénierie",bimt:'Modélisation, coordination et gestion BIM (Revit, Civil 3D, InfraWorks). Choisissez une couche : le modèle se déploie en vue éclatée.',mod:'Modèle illustratif',ill:'Visuel illustratif',
+in:'Ingénierie industrielle',int:"Des études techniques adaptées aux environnements industriels exigeants. Référence publique identifiée : Tanger Tech — Ain Dalia.",
+fi:'Sécurité incendie',fit:"Conception et documentation technique liées à la sécurité incendie des bâtiments et installations : plans, évacuation, désenfumage, issues de secours.",
+k1:'Assainissement',k2:'Voirie',k3:'Réseaux',pj:'Projets & Références',cp:'Compétences & Technologies',lo:'Localisation',ma:'Maroc',ad:"Adresse à confirmer avec l'entreprise avant publication finale.",
+mp:'Ouvrir dans Google Maps',fme:"Email de l'entreprise à renseigner (COMPANY_EMAIL dans le script).",ctt:'Parlons de votre projet.',p1:'Nom',p2:'Entreprise',p3:'Email',p4:'Téléphone',p5:'Type de projet',p6:'Message',sub:'Demander une consultation',fmn:'Démo : formulaire à relier à un service (Formspree, etc.).',fmd:'Merci — formulaire de démonstration, aucun envoi effectué.',ft:"Bureau d'études techniques et d'ingénierie",demo:'Site DEMO, non officiel.',
+steps:['Analyse','Conception','Modélisation BIM','Coordination technique','Études & validation','Assistance technique'],
+lay:['Tout','Architecture','Structure','MEP','Infrastructure','Sécurité incendie'],
+sv:[['Études techniques',"Études techniques pour projets de construction et d'infrastructure."],['Génie civil','Études de génie civil et accompagnement technique.'],['VRD','Voirie et Réseaux Divers.'],['Hydraulique & AEP',"Alimentation en eau potable et études hydrauliques."],['Assainissement',"Études d'infrastructures d'assainissement et de drainage."],['Électrification MT / BT','Études électriques moyenne et basse tension.'],['Éclairage public',"Ingénierie de l'éclairage public."],['BIM Management & Modélisation','BIM, coordination numérique et modélisation 3D.'],['Sécurité incendie','Ingénierie et documentation technique de sécurité incendie.'],['Assistance technique','Assistance technique et support de projet.'],['Conseil & Expertise',"Conseil en ingénierie et expertise technique."],["Études tous corps d'état",'Études pluridisciplinaires du bâtiment.']],
+pc:[['BTR New Material Group','Tanger Tech — Ain Dalia · Industriel / Batteries',"Rôle : bureau d'études techniques — Référence publique identifiée"],['Infrastructure industrielle','Tanger · Études techniques / documentation sécurité','Projet documenté publiquement'],['Projet résidentiel','Moulay Rachid — Casablanca',"Rôle : bureau d'études — Référence publique identifiée"]],
+sk:['CAO / DAO','COVADIS','MENSURA','Civil 3D','InfraWorks','Revit','Coordination BIM','Sécurité incendie','Flux de travail ingénierie','Modélisation numérique']},
+en:{n1:'Home',n2:'About',n3:'Expertise',n5:'Projects',n6:'Skills',n7:'Contact',c1:'Discover our expertise',c2:'Contact us',eb:'Technical engineering consultancy · Tangier',h1:'Engineering the Future.<br>Building with Precision.',lead:'Building & Engineering Experts Maroc supports construction, infrastructure and industrial projects through technical studies, engineering and BIM solutions.',
+ab:'Technical expertise serving complex projects',abt:'Building & Engineering Experts Maroc is a technical engineering consultancy founded in 2019. Its activity covers technical studies, civil engineering, infrastructure, BIM, hydraulics, electrification and fire safety.',f1:'Founded',f2:'Share capital',f3:'Engineering office',
+ex:'Our expertise',pr:'Engineering process',bimt:'BIM modelling, coordination and management (Revit, Civil 3D, InfraWorks). Pick a layer: the model opens into an exploded view.',mod:'Illustrative model',ill:'Illustrative visual',
+in:'Industrial engineering',int:'Technical studies adapted to demanding industrial environments. Publicly identified reference: Tanger Tech — Ain Dalia.',
+fi:'Fire safety',fit:'Design and technical documentation related to fire safety of buildings and facilities: plans, evacuation, smoke extraction, emergency exits.',
+k1:'Sanitation',k2:'Roads',k3:'Networks',pj:'Projects & References',cp:'Skills & Technologies',lo:'Location',ma:'Morocco',ad:'Address to be confirmed with the company before final publication.',
+mp:'Open in Google Maps',fme:'Company email to be set (COMPANY_EMAIL in the script).',ctt:"Let's talk about your project.",p1:'Name',p2:'Company',p3:'Email',p4:'Phone',p5:'Project type',p6:'Message',sub:'Request a consultation',fmn:'Demo: connect this form to a form service (Formspree, etc.).',fmd:'Thank you — demo form, nothing was sent.',ft:'Technical engineering consultancy',demo:'DEMO site, unofficial.',
+steps:['Analysis','Design','BIM modelling','Technical coordination','Studies & validation','Technical assistance'],
+lay:['All','Architecture','Structure','MEP','Infrastructure','Fire Safety'],
+sv:[['Technical studies','Technical engineering studies for construction and infrastructure projects.'],['Civil engineering','Civil engineering studies and technical support.'],['VRD','Roads and miscellaneous utility networks.'],['Hydraulics & water supply','Drinking-water supply and hydraulic studies.'],['Sanitation','Wastewater and drainage infrastructure studies.'],['MV / LV electrification','Medium- and low-voltage electrical studies.'],['Public lighting','Public lighting engineering.'],['BIM Management & Modelling','BIM, digital coordination and 3D modelling.'],['Fire safety','Fire-safety engineering and technical documentation.'],['Technical assistance','Technical assistance and project support.'],['Consulting & Expertise','Engineering consulting and technical expertise.'],['All-trades studies','Multidisciplinary building engineering studies.']],
+pc:[['BTR New Material Group','Tanger Tech — Ain Dalia · Industrial / Battery manufacturing','Role: technical engineering office — Publicly identified reference'],['Industrial infrastructure','Tangier · Technical studies / safety documentation','Publicly documented project'],['Residential project','Moulay Rachid — Casablanca','Role: engineering office — Publicly identified reference']],
+sk:['CAD / drafting','COVADIS','MENSURA','Civil 3D','InfraWorks','Revit','BIM coordination','Fire safety','Engineering workflow','Digital modelling']},
+ar:{n1:'الرئيسية',n2:'من نحن',n3:'خبراتنا',n5:'المشاريع',n6:'الكفاءات',n7:'اتصل بنا',c1:'اكتشف خبراتنا',c2:'اتصل بنا',eb:'مكتب دراسات تقنية · طنجة',h1:'هندسة الدقة في خدمة مشاريعكم.',lead:'تواكب Building & Engineering Experts Maroc مشاريع البناء والبنية التحتية والصناعة من خلال الدراسات التقنية والهندسة وحلول BIM.',
+ab:'خبرة تقنية في خدمة المشاريع المعقدة',abt:'Building & Engineering Experts Maroc مكتب دراسات تقنية وهندسة تأسس سنة 2019. يشمل نشاطه الدراسات التقنية والهندسة المدنية والبنيات التحتية وBIM والهيدروليك والكهربة والسلامة من الحرائق.',f1:'التأسيس',f2:'رأس المال',f3:'مكتب دراسات',
+ex:'خبراتنا',pr:'مسار الهندسة',bimt:'نمذجة وتنسيق وإدارة BIM (Revit وCivil 3D وInfraWorks). اختر طبقة ليتفكك النموذج أمامك.',mod:'نموذج توضيحي',ill:'صورة توضيحية',
+in:'الهندسة الصناعية',int:'دراسات تقنية ملائمة للبيئات الصناعية الصعبة. مرجع عمومي معروف: طنجة تيك — عين الدالية.',
+fi:'السلامة من الحرائق',fit:'تصميم ووثائق تقنية متعلقة بالسلامة من الحرائق في المباني والمنشآت: المخططات والإخلاء وشفط الدخان ومخارج الطوارئ.',
+k1:'التطهير',k2:'الطرق',k3:'الشبكات',pj:'المشاريع والمراجع',cp:'الكفاءات والتقنيات',lo:'الموقع',ma:'المغرب',ad:'العنوان يُؤكَّد مع الشركة قبل النشر النهائي.',
+mp:'افتح في خرائط Google',fme:'يجب إدخال بريد الشركة (COMPANY_EMAIL في السكريبت).',ctt:'لنتحدث عن مشروعكم.',p1:'الاسم',p2:'الشركة',p3:'البريد الإلكتروني',p4:'الهاتف',p5:'نوع المشروع',p6:'الرسالة',sub:'اطلب استشارة',fmn:'عرض تجريبي: يُربط النموذج بخدمة نماذج لاحقًا.',fmd:'شكرًا — نموذج تجريبي، لم يُرسل شيء.',ft:'مكتب دراسات تقنية وهندسة',demo:'موقع تجريبي غير رسمي.',
+steps:['التحليل','التصميم','نمذجة BIM','التنسيق التقني','الدراسات والمصادقة','المساعدة التقنية'],
+lay:['الكل','العمارة','الهيكل','MEP','البنية التحتية','السلامة من الحرائق'],
+sv:[['الدراسات التقنية','دراسات هندسية لمشاريع البناء والبنية التحتية.'],['الهندسة المدنية','دراسات الهندسة المدنية والدعم التقني.'],['الطرق والشبكات المختلفة','الطرق والشبكات المختلفة (VRD).'],['الهيدروليك والتزويد بالماء','التزويد بالماء الصالح للشرب والدراسات الهيدروليكية.'],['التطهير','دراسات بنيات التطهير والصرف.'],['الكهربة متوسطة/منخفضة الجهد','دراسات كهربائية متوسطة ومنخفضة الجهد.'],['الإنارة العمومية','هندسة الإنارة العمومية.'],['إدارة ونمذجة BIM','BIM والتنسيق الرقمي والنمذجة ثلاثية الأبعاد.'],['السلامة من الحرائق','هندسة ووثائق تقنية للسلامة من الحرائق.'],['المساعدة التقنية','مساعدة تقنية ودعم المشاريع.'],['الاستشارة والخبرة','استشارات هندسية وخبرة تقنية.'],['دراسات جميع الأصناف','دراسات هندسية متعددة التخصصات للبناء.']],
+pc:[['BTR New Material Group','طنجة تيك — عين الدالية · صناعة البطاريات','الدور: مكتب دراسات تقنية — مرجع عمومي معروف'],['بنية تحتية صناعية','طنجة · دراسات تقنية / وثائق السلامة','مشروع موثق عموميًا'],['مشروع سكني','مولاي رشيد — الدار البيضاء','الدور: مكتب دراسات — مرجع عمومي معروف']],
+sk:['رسم بمساعدة الحاسوب','COVADIS','MENSURA','Civil 3D','InfraWorks','Revit','تنسيق BIM','السلامة من الحرائق','سير العمل الهندسي','النمذجة الرقمية']}};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const IC=['M4 20V8l8-4 8 4v12M9 20v-6h6v6','M3 21h18M5 21V9l7-5 7 5v12','M3 17h18M5 13h14M8 9h8','M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z','M3 8c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0','M13 2L4 14h7l-1 8 9-12h-7z','M12 3a6 6 0 0 0-3 11v3h6v-3a6 6 0 0 0-3-11zM9 21h6','M12 2l9 5v10l-9 5-9-5V7zM12 12l9-5M12 12v10M12 12L3 7','M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-2 1-3 2-5','M14 6l4 4-9 9H5v-4zM13 7l4 4','M4 19V5M4 19h16M8 15l4-4 3 3 5-6','M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z'];
+const LK=['all','arch','struct','mep','infra','fire'];let L='fr',BIMK='all',setK;
+function apply(l){L=l;const t=T[l];document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
+ $$('[data-t]').forEach(e=>e.innerHTML=t[e.dataset.t]);$$('[data-p]').forEach(e=>e.placeholder=t[e.dataset.p]);
+ $('#svc').innerHTML=t.sv.map((s,i)=>`<article class="card tilt rv in"><svg viewBox="0 0 24 24"><path d="${IC[i]}"/></svg><h3>${s[0]}</h3><p>${s[1]}</p></article>`).join('');
+ $('#pcs').innerHTML=t.pc.map(p=>`<article class="card tilt"><h3>${p[0]}</h3><p>${p[1]}</p><em>${p[2]}</em></article>`).join('');
+ $('#steps').innerHTML=t.steps.map((s,i)=>`<li class="in"><i>0${i+1}</i>${s}</li>`).join('');
+ $('#sk').innerHTML=t.sk.map(s=>`<span>${s}</span>`).join('');
+ $('#ly').innerHTML=t.lay.map((s,i)=>`<button data-k="${LK[i]}" class="${LK[i]===BIMK?'on':''}">${s}</button>`).join('');
+ $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));tilt();try{localStorage.setItem('lg',l)}catch(e){}}
+$('#lang').onclick=e=>e.target.dataset.l&&apply(e.target.dataset.l);
+$('#ly').onclick=e=>{const k=e.target.dataset.k;if(!k)return;BIMK=k;$$('#ly button').forEach(b=>b.classList.toggle('on',b===e.target));setK&&setK(k)};
+$('#bg').onclick=()=>$('#menu').classList.toggle('o');$$('#menu a').forEach(a=>a.onclick=()=>$('#menu').classList.remove('o'));
+/* ===== CONFIG: fill these once confirmed with the company ===== */
+const COMPANY_EMAIL='';   // e.g. 'company@gmail.com' — form opens a Gmail draft addressed to it
+const LINKEDIN='';        // company LinkedIn page URL
+const MAPS='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('Angle Rue Jordanie et Liban, Résidence Yamna 2, Tanger 90000, Maroc');
+$('#mapl').href=MAPS;$('#mapb').href=MAPS;if(LINKEDIN)$('#li').href=LINKEDIN;
+$('#fm').onsubmit=e=>{e.preventDefault();if(!COMPANY_EMAIL){$('#fmsg').textContent=T[L].fme;return}
+ const body=$$('#fm [data-p]').map(i=>i.placeholder+': '+i.value).join('\n'),su=T[L].sub+' — '+$('#fm [data-p=p1]').value;
+ open('https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(COMPANY_EMAIL)+'&su='+encodeURIComponent(su)+'&body='+encodeURIComponent(body),'_blank');$('#fmsg').textContent=T[L].fmd};
+/* 3D tilt + glare */
+function tilt(){if(RM)return;$$('.tilt,.art,.vw').forEach(c=>{c.style.transition='transform .15s,border-color .3s,box-shadow .3s';c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.transform=`rotateY(${(x-.5)*14}deg) rotateX(${(.5-y)*14}deg) translateZ(10px)`;c.style.setProperty('--gx',x*100+'%');c.style.setProperty('--gy',y*100+'%')};c.onmouseleave=()=>c.style.transform=''})}
+/* reveal, cursor light, scroll parallax */
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add('in'),io.unobserve(e.target))),{threshold:.12});$$('.rv').forEach(e=>io.observe(e));
+addEventListener('mousemove',e=>{$('#glow').style.left=e.clientX+'px';$('#glow').style.top=e.clientY+'px'});
+/* CSS-3D industrial complex (illustrative) */
+(function(){const s=$('#scn'),B=[[-110,60,60,60,50],[-30,40,50,90,60],[50,90,70,55,90]],mk=(x,z,w,d,h)=>{const b=document.createElement('div');b.className='bx';b.style.cssText=`left:${x+100}px;top:${z}px;width:${w}px;height:${d}px;transform:translateZ(0)`;
+ const f=(st)=>{const e=document.createElement('div');e.style.cssText=st;b.appendChild(e)};
+ f(`width:${w}px;height:${h}px;bottom:0;transform-origin:bottom;transform:rotateX(-90deg)`);f(`width:${w}px;height:${h}px;top:${d}px;transform-origin:top;transform:rotateX(-90deg) translateY(-${h}px)`);
+ f(`width:${d}px;height:${h}px;left:0;transform-origin:left;transform:rotateY(90deg) rotateZ(90deg) translateY(-${h}px)`);f(`width:${w}px;height:${d}px;transform:translateZ(${h}px)`);s.appendChild(b)};
+ B.forEach(([x,z,w,d,h])=>mk(x,z,w,d,h));const c=$('#iso');let a=30;
+ c.onmousemove=e=>{const r=c.getBoundingClientRect();a=30+((e.clientX-r.left)/r.width-.5)*80;s.style.transform=`rotateX(${-25-((e.clientY-r.top)/r.height-.5)*30}deg) rotateY(${a}deg)`}})();
+/* Three.js: hero city + BIM exploded view */
+function bld(){const g={},mk=(k,geo,col,p)=>{const m=new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:col,transparent:true}));m.position.set(...p);(g[k]=g[k]||new THREE.Group()).add(m)};
+ mk('arch',new THREE.BoxGeometry(4,3,3),0x9fc3ff,[0,1.5,0]);for(let x=-1.8;x<=1.8;x+=1.2)for(let z=-1.3;z<=1.3;z+=1.3)mk('struct',new THREE.BoxGeometry(.15,3,.15),0xffffff,[x,1.5,z]);
+ [0,1.5,3].forEach(y=>mk('struct',new THREE.BoxGeometry(4,.1,3),0xffffff,[0,y,0]));[[.6,.6],[-.6,-.6]].forEach(p=>mk('mep',new THREE.CylinderGeometry(.08,.08,3.6,6),0xf5c542,[p[0],1.5,p[1]]));
+ mk('infra',new THREE.BoxGeometry(8,.05,6),0x3b9cff,[0,-.03,0]);mk('infra',new THREE.BoxGeometry(8,.05,.8),0x8a97a8,[0,0,3.4]);
+ mk('fire',new THREE.BoxGeometry(.6,.9,.1),0xff6b57,[2.05,.45,1.5]);mk('fire',new THREE.BoxGeometry(.6,.9,.1),0xff6b57,[-2.05,.45,-1.5]);
+ const r=new THREE.Group();Object.values(g).forEach(x=>r.add(x));return{r,g}}
+function sc(cv,fov){const r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});r.setPixelRatio(Math.min(devicePixelRatio,2));const s=new THREE.Scene(),c=new THREE.PerspectiveCamera(fov,1,.1,200);
+ const f=()=>{r.setSize(cv.clientWidth,cv.clientHeight,false);c.aspect=cv.clientWidth/cv.clientHeight;c.updateProjectionMatrix()};addEventListener('resize',f);f();return{r,s,c}}
+if(window.THREE){
+ const h=sc($('#hc'),50),M=new THREE.LineBasicMaterial({color:0x3b9cff,transparent:true,opacity:.55}),city=new THREE.Group();
+ for(let i=0;i<70;i++){const w=.8+Math.random()*1.4,ht=.8+Math.random()*(i%7?3:7),m=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(w,ht,w)),M);m.position.set((i%10-4.5)*3.2+Math.random(),ht/2,(Math.floor(i/10)-3.5)*3.2+Math.random());city.add(m)}
+ h.s.add(city);const gr=new THREE.GridHelper(60,60,0x3b9cff,0x1c3357);gr.material.transparent=true;gr.material.opacity=.35;h.s.add(gr);
+ const scan=new THREE.Mesh(new THREE.PlaneGeometry(60,.15),new THREE.MeshBasicMaterial({color:0x3b9cff,transparent:true,opacity:.35,side:2}));scan.rotation.x=-Math.PI/2;h.s.add(scan);
+ const P=new Float32Array(400*3).map(()=>(Math.random()-.5)*50),pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(P,3));const pts=new THREE.Points(pg,new THREE.PointsMaterial({size:.06,color:0x8fc4ff}));h.s.add(pts);
+ h.s.fog=new THREE.Fog(0x080f1c,15,45);let mx=0,my=0,t=0;addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+ const v=sc($('#bc'),40),b=bld();v.s.add(b.r);v.c.position.set(7,5,10);
+ const off={arch:0,struct:0,mep:0,infra:0,fire:0},tg={...off};setK=k=>{const y={arch:3,struct:1.5,mep:0,infra:-1.5,fire:-3};Object.keys(tg).forEach(n=>tg[n]=k==='all'?0:y[n]*.9);
+  Object.entries(b.g).forEach(([n,g])=>g.children.forEach(l=>l.material.opacity=(k==='all'||k===n)?1:.1))};
+ (function loop(){t+=.01;const sy=Math.min(scrollY/innerHeight,1.5);
+  if(!RM){h.c.position.set(Math.sin(t*.3+mx)*14,5+sy*6-my*2,16-sy*4);scan.position.y=(t*3)%8;pts.rotation.y+=.0004;b.r.rotation.y+=.006}
+  h.c.lookAt(0,2,0);Object.entries(b.g).forEach(([n,g])=>g.position.y+=(tg[n]-g.position.y)*.08);
+  v.c.lookAt(0,1.5,0);h.r.render(h.s,h.c);v.r.render(v.s,v.c);requestAnimationFrame(loop)})();}
+apply((()=>{try{return localStorage.getItem('lg')}catch(e){}})()||'fr');
+</script>
+</body>
+</html>
